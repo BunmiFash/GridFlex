@@ -87,7 +87,7 @@ button {
 
 }
 
-button:active {
+button:hover {
     cursor: pointer;
 }
 
