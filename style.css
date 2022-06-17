@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: hsl(31, 77%, 52%);
+    --color2: hsl(184, 100%, 22%);
+    --color3: hsl(179, 100%, 13%);
+    --color4: hsla(0, 0%, 100%, 0.75);
+    /*  paragraphs */
+    --color5: hsl(0, 0%, 95%);
+    /*  background, headings, buttons, */
+    --fontsize: 15px;
+    --family1: 'Lexend Deca', sans-serif;
+    --weight1: 400px;
+    --family2: 'Big Shoulders Display', sans-serif;
+    --weight2: 700px;
+    --padding: 1em;
+    --radius: 5px;
+}
+
+/* GENERAL STYLING */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.top{
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+a:hover {
+    color: var(--color3);
+    font-size: 20px;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+main {
+    display: flex;
+    margin: auto;
+
+}
+
+
+main div {
+    padding: var(--padding);
+    font-size: var(--fontsize);
+    width: 33.33%
+}
+
+main div h3 {
+    font-family: var(--family2);
+    font-weight: var(--weight2);
+    padding-bottom: 20px;
+    color: var(--color5);
+}
+
+main p {
+    font-family: var(--family1);
+    font-weight: var(--weight1);
+    padding-bottom: 30px;
+    color: var(--color4);
+
+}
+
+button {
+    background-color: var(--color5);
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    width: 100px;
+
+}
+
+button:active {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    padding-bottom: 20px;
+}
+
+
+/* FIRST CONTAINER */
+main div.first {
+    background-color: var(--color1);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#btn1 {
+    color: var(--color1);
+}
+
+#btn1:hover {
+    background-color: transparent;
+    border: 1px solid var(--color5);
+    color: var(--color5);
+
+}
+
+/* SECOND CONTAINER */
+main div.second {
+    background-color: var(--color2);
+
+}
+
+#btn2 {
+    color: var(--color2);
+}
+
+#btn2:hover {
+    background-color: transparent;
+    border: 1px solid var(--color5);
+    color: var(--color5);
+
+}
+
+/* THIRD CONTAINER */
+main div.third {
+    background-color: var(--color3);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#btn3 {
+    color: var(--color3);
+}
+
+#btn3:hover {
+    background-color: transparent;
+    border: 1px solid var(--color5);
+    color: var(--color5);
+
+}
+
+
+@media screen and (max-width:1440px) and (min-width:376px) {
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+    }
+    main div {
+        width: 33.33%;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+main div{
+    border-radius:var(--radius);
+    margin-bottom: 10px;
+    width:75%;
+    padding:20px;
+}
+}
