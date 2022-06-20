@@ -14,9 +14,9 @@
     /*  background, headings, buttons, */
     --fontsize: 15px;
     --family1: 'Lexend Deca', sans-serif;
-    --weight1: 400px;
+    --weight1: 400;
     --family2: 'Big Shoulders Display', sans-serif;
-    --weight2: 700px;
+    --weight2: 700;
     --padding: 1em;
     --radius: 5px;
 }
@@ -29,6 +29,9 @@
     align-items: center;
     width: 100%;
     margin: auto;
+}
+.top{
+    margin-top: 20px;
 }
 .top{
     margin-bottom: 10px;
@@ -150,30 +153,86 @@ main div.third {
 
 }
 
+/* MEDIA QUERY */
 
-@media screen and (max-width:1440px) and (min-width:376px) {
-
-    body {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
+@media (max-width:1440px) and (min-width:1001px) {
+    main{
+        width: 80%;
+        height: 100vh;
         align-items: center;
-
     }
+    
+    main div{
+        padding: 40px;
+        
+    }
+    main div h3{
+    font-size: 30px;
+    }
+    main div p{
+        font-size:30px;
+        padding-right:25px;
+        padding-bottom: 25px;
+    }
+}
 
+@media (max-width:1000px) and (min-width:601px){
     main {
         display: flex;
         flex-direction: row;
-        width: 75%;
+        width: 80%;
+        height: 100vh;
         margin: auto;
+        align-items: center;
     }
-    main div {
+    main div{
+        padding: 10px;
         width: 33.33%;
+        padding-bottom: 20px;
     }
-
 }
 
-@media screen and (max-width:375px) {
+
+@media (max-width:600px) and (min-width:376px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+   
+main div{
+    border-radius:var(--radius);
+    margin-bottom: 10px;
+    width:60%;
+    padding:5%;
+        
+}
+main div h3{
+    font-size: 30px;
+    padding-left: 10px;
+    }
+
+main div p{
+    padding-bottom:15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+button{
+    margin-left: 10px;
+    font-size: 25px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 25px;
+}
+}
+
+@media (max-width:375px) {
+
 
 main{
     display: flex;
@@ -187,6 +246,21 @@ main div{
     border-radius:var(--radius);
     margin-bottom: 10px;
     width:75%;
-    padding:20px;
+    padding:10%;
+        
+}
+main div h3{
+    font-size: 30px;
+    }
+
+main div p{
+    padding-bottom:15%;
+    font-size: 30px;
+}
+button{
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
 }
 }

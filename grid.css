@@ -27,6 +27,11 @@ body {
     min-height: 100vh;
     place-items: center;
 }
+main{
+    width: 100%;
+    align-items: center;
+
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -39,7 +44,7 @@ body {
     margin-bottom: 10px;
 }
 
-main {
+.grid {
     display: grid;
     gap:3px;
     grid-template-columns:repeat(4, 1fr);
@@ -51,8 +56,8 @@ main {
     'c c e e'
     ;
     background-color: var(--color6);
-    width: 250px;
-    height: 200px;
+    width: 180px;
+    height:150px;
     margin: auto;
 
 }
