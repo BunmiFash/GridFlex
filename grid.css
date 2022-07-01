@@ -45,20 +45,23 @@ main{
 }
 
 .grid {
-    display: grid;
-    gap:3px;
-    grid-template-columns:repeat(4, 1fr);
-    grid-template-areas:
-    'a a a b '
-    'a a a b'
-    'c c d d'
-    'c c e e'
-    'c c e e'
-    ;
-    background-color: var(--color6);
-    width: 180px;
-    height:150px;
     margin: auto;
+    display: grid;
+    background-color: var(--color6);
+    width: 200px;
+    height:150px;
+    gap:2px;
+    grid-template-columns:repeat(6, 0.5fr);
+    grid-template-areas:
+    'a a a a b b '
+    'a a a a b b'
+    'c c c d d d'
+    'c c c d d d'
+    'c c c e e e'
+    'c c c e e e'
+    'c c c e e e'
+    ;
+
 
 }
 
@@ -72,25 +75,21 @@ main{
 
 .box2 {
     background-color: var(--color2);
-    padding: var(--padding);
     grid-area: b;
     
 }
 
 .box3 {
     background-color: var(--color3);
-    padding: var(--padding);
     grid-area: c;
 }
 
 .box4 {
     background-color: var(--color4);
-    padding: var(--padding);
     grid-area: d;
 }
 
 .box5 {
     background-color: var(--color5);
-    padding: var(--padding);
    grid-area: e;
 }
